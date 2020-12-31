@@ -101,6 +101,11 @@ public class Home extends AppCompatActivity {
             battreyLevel.setText(String.valueOf(level) + "%");
         }
     };
+
+    public void map(View view) {
+        startActivity(new Intent(getApplicationContext(),MapsActivity.class));
+    }
+
     public class BatteryAnim extends Animation {
         private float from, to;
         private ProgressBar pBar;
