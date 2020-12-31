@@ -16,6 +16,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!--
+         application tag opens up to allow fundamental app characteristics be defined eg 
+            icon, label, general app theme.
+    -->
 
     <application
         android:allowBackup="true"
@@ -40,6 +45,10 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        
+        <!--
+         All activities are assigned a specified parent activity, for which they can return to after an event is finished
+    -->
 
         <activity
             android:name=".MapsActivity"
